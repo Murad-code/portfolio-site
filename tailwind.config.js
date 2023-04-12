@@ -1,18 +1,30 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}',
-    './src/app/**/*.{js,ts,jsx,tsx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      backgroundColor: {
+        white: "#FFFFFF",
+        offWhite: "#F5F5F5",
+        primary: "#339989",
+      },
+      colors: {
+        black: "#353535",
+        grey: "#5D5D5D",
+        primary: "#339989",
+        secondary: "#0E79BA",
+      },
+      fontFamily: { sans: ["Outfit", ...defaultTheme.fontFamily.sans] },
+      dropShadow: {
+        base: "0 1px 4px rgba(235, 238, 242, 1)",
       },
     },
   },
   plugins: [],
-}
+};
