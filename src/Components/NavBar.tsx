@@ -20,7 +20,7 @@ function NavBar() {
     >
       <div className="flex items-center">
         <a className="cursor-pointer">
-          <h3 className="text-2xl font-bold text-black">MURAD KAMALI</h3>
+          <h3 className="text-2xl font-bold text-black">Murad Kamali</h3>
         </a>
       </div>
 
@@ -29,35 +29,35 @@ function NavBar() {
           className="flex cursor-pointer text-black
                     transition-colors duration-300 hover:text-primary"
         >
-          home
+          Home
         </a>
 
         <a
           className="flex cursor-pointer text-black
                     transition-colors duration-300 hover:text-primary"
         >
-          about
+          About
         </a>
 
         <a
           className="flex cursor-pointer text-black
                     transition-colors duration-300 hover:text-primary"
         >
-          portfolio
+          Portfolio
         </a>
 
         <a
           className="flex cursor-pointer text-black
                     transition-colors duration-300 hover:text-primary"
         >
-          experience
+          Experience
         </a>
 
         <a
           className="flex cursor-pointer text-black
                     transition-colors duration-300 hover:text-primary"
         >
-          contact
+          Contact
         </a>
       </div>
 
