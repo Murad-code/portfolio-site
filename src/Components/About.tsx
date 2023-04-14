@@ -13,8 +13,8 @@ function About() {
             height="50"
           />
         </div>
-        <h4 className="mt-6 text-2xl font-semibold ">Experience</h4>
-        <p className="mt-3 w-auto text-xl">
+        <h4 className="mt-6 text-2xl font-semibold">Experience</h4>
+        <p className="mt-3 w-auto text-xl font-light ">
           As a software engineer with two years of experience working at a
           full-stack Javascript web development agency, I possess a strong
           understanding of technologies such as React, MongoDB, TypeScript,
@@ -31,7 +31,7 @@ function About() {
           />
         </div>
         <h4 className="mt-6 text-2xl font-semibold">Education</h4>
-        <p className="mt-3 text-xl">
+        <p className="mt-3 text-xl font-light	">
           I'm a final year BSc Computer Science student at Brunel aiming for a
           1st Class. This course has taught me core concepts such as algorithms,
           data structures, databases, software engineering principles, project
@@ -49,7 +49,7 @@ function About() {
           />
         </div>
         <h4 className="mt-6 text-2xl	font-semibold">Side Projects</h4>
-        <p className="mt-3 text-xl">
+        <p className="mt-3 text-xl font-light">
           My side projects allow me to hone new and existing skills with
           technologies like React, MongoDB, TypeScript, GraphQL, and AWS. I also
           experiment with AI and machine learning and through my projects, I am

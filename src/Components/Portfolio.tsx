@@ -12,7 +12,7 @@ import sortingVisualiserDemo from "../Assets/vids/Sorting visualiser.mp4";
 import type { StaticImageData } from "next/image";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination } from "swiper";
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -20,6 +20,7 @@ import "swiper/css/navigation";
 function Portfolio() {
   interface IProject {
     name: string;
+    skills: string;
     description: string;
     link: string;
     content: StaticImageData[];
@@ -27,6 +28,7 @@ function Portfolio() {
   const projectsInfo: IProject[] = [
     {
       name: "Car Price Predictor",
+      skills: "Python • TypeScript • React • NextJs  • Excel • Nivo",
       description:
         "I created a Car Price Predictor web app that predicts a car's current and future price using machine learning. I used Python, scikit-learn, and Excel to develop the model, and React, Nextjs, and flask_restful to create the web app. Results are displayed on a line chart using Nivo charts.",
       link: "https://github.com/Murad-code/car-price-predictor",
@@ -34,13 +36,15 @@ function Portfolio() {
     },
     {
       name: "Food Finder",
+      skills: "JavaScript • React • MongoDB • Express • Google OAuth",
       description:
         "Restaurant finder webapp where users can enter a term and location to find places to eat and filter by best match, rating, and most reviews. This was developed by using Yelp's Fusion API and Google's OAuth was integrated so favourites can be saved to the user’s Google account.",
       link: "https://github.com/Murad-code/food-finder-public",
       content: [foodFinder, foodFinder2],
     },
     {
-      name: "Sorting Visualiser",
+      name: "Sorting Algorithms Visualiser",
+      skills: "JavaScript • React",
       description:
         "Visualiser tool to help teach/learn how different sorting algorithms work. Currently has: merge sort, bubble sort, insertion sort, and quick sort.",
       link: "https://github.com/Murad-code/sorting-visualiser",
@@ -57,16 +61,25 @@ function Portfolio() {
             className="mt-10 flex w-auto rounded-xl bg-white pl-16 pt-16 drop-shadow-md backdrop-blur-md"
           >
             <div className="w-1/3 pb-8">
-              <div className="inline-block rounded-xl bg-offWhite p-4"></div>
-              <h4 className="mt-6 text-2xl font-semibold">{project.name}</h4>
-              <p className="mt-3 text-xl">{project.description}</p>
+              <h4 className="mt-6 text-2xl">{project.name}</h4>
+              <p className="mt-3 text-xl font-light text-primary">
+                {project.skills}
+              </p>
+              <p className="mt-3 text-xl	font-light">{project.description}</p>
             </div>
             <div className="ml-4 flex h-[30rem] w-2/3 overflow-hidden rounded-br-xl rounded-tl-xl pb-3 pr-3 ">
               <Swiper
                 key={index}
                 navigation={true}
                 loop={true}
-                modules={[Pagination, Navigation]}
+                modules={[Pagination, Navigation, Autoplay]}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                pagination={{
+                  clickable: true,
+                }}
                 injectStyles={[".swiper-button-next: black"]}
                 className="mySwiper colors-primary rounded-br-xl rounded-tl-xl bg-offWhite p-4 "
               >
