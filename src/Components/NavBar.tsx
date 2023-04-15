@@ -16,7 +16,7 @@ function NavBar() {
     <nav
       className="fixed left-0 right-0 top-0
             z-10 flex w-full
-            justify-around bg-white py-14 drop-shadow-md backdrop-blur-md"
+            justify-around bg-white py-10 drop-shadow-md backdrop-blur-md"
     >
       <div className="flex items-center">
         <a className="cursor-pointer">
@@ -28,6 +28,7 @@ function NavBar() {
         <a
           className="flex cursor-pointer text-black
                     transition-colors duration-300 hover:text-primary"
+          href="#Home"
         >
           Home
         </a>
@@ -35,6 +36,7 @@ function NavBar() {
         <a
           className="flex cursor-pointer text-black
                     transition-colors duration-300 hover:text-primary"
+          href="#About"
         >
           About
         </a>
@@ -42,6 +44,7 @@ function NavBar() {
         <a
           className="flex cursor-pointer text-black
                     transition-colors duration-300 hover:text-primary"
+          href="#Portfolio"
         >
           Portfolio
         </a>
@@ -49,6 +52,7 @@ function NavBar() {
         <a
           className="flex cursor-pointer text-black
                     transition-colors duration-300 hover:text-primary"
+          href="#Experience"
         >
           Experience
         </a>
@@ -56,6 +60,7 @@ function NavBar() {
         <a
           className="flex cursor-pointer text-black
                     transition-colors duration-300 hover:text-primary"
+          href="#Contact"
         >
           Contact
         </a>

@@ -21,16 +21,29 @@ function Hero() {
       <div className="mx-auto mt-24 text-center">
         <h5 className="text-center text-3xl text-black">
           Scroll down to know more about me
+          <div className="mt-12 flex flex-col items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="#339989"
+              className="h-6 w-6 animate-bounce"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 2a.75.75 0 0 1 .75.75v10.5l2.97-2.97a.75.75 0 0 1 1.06 1.06l-4.5 4.5a.75.75 0 0 1-1.06 0l-4.5-4.5a.75.75 0 1 1 1.06-1.06L9.25 13.25V2.75A.75.75 0 0 1 10 2z"
+              />
+            </svg>
+          </div>
         </h5>
       </div>
 
-      <Icon
+      {/* <Icon
         className="mx-auto mt-12"
         icon="material-symbols:keyboard-double-arrow-down"
-        color="#5d5d5d"
+        color="#339989"
         width="48"
         height="48"
-      />
+      /> */}
     </div>
   );
 }

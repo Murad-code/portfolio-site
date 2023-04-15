@@ -4,11 +4,15 @@
 @layer base {
   html {
     font-family: Outfit, system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  a {
+    transition: all 0.3s ease-in-out;
   }
 }
 :root {
   --swiper-theme-color: #353535;
-  --swiper-navigation-color: #339989;
+  --swiper-navigation-color: #353535;
   --swiper-pagination-color: #339989;
   /* --background-color: #F5F5F5;
   --background-secondary-color: #FFFFFF;

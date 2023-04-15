@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 function About() {
   return (
-    <div className="mt-24 flex">
+    <div id="About" className="flex pt-36">
       <div className="w-1/3 rounded-xl bg-white px-10 py-8 drop-shadow-md backdrop-blur-md">
         <div className="inline-block rounded-xl bg-offWhite p-4">
           <Icon

@@ -10,7 +10,7 @@ import riotGames from "../Assets/Companies/riot-games.png";
 
 function Experience() {
   return (
-    <div className="mt-36">
+    <div id="Experience" className="pt-36">
       <div>
         <h2 className="text-5xl">Companies I've worked with</h2>
         <h4 className="mt-6 text-2xl text-grey">
