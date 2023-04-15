@@ -1,8 +1,13 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 
 function Contact() {
+  const recipient = "muradk2512@gmail.com";
+  const subject = "Email from portfolio site!";
+  const body = "Hello, I would like to get in touch with you.";
+  const mailtoUrl = `mailto:${recipient}`;
   const handleClick = () => {
     console.log("Button clicked!");
 
@@ -23,9 +28,7 @@ function Contact() {
         <div className="m-2 flex flex-wrap">
           <div className="w-1/2 p-2">
             <div className="relative">
-              <label for="name" className="text-sm leading-7 ">
-                Name
-              </label>
+              <label className="text-sm leading-7 ">Name</label>
               <input
                 type="text"
                 id="name"
@@ -36,9 +39,7 @@ function Contact() {
           </div>
           <div className="w-1/2 p-2">
             <div className="relative">
-              <label for="email" className="text-sm leading-7">
-                Email
-              </label>
+              <label className="text-sm leading-7">Email</label>
               <input
                 type="email"
                 id="email"
@@ -50,9 +51,7 @@ function Contact() {
 
           <div className="w-full p-2">
             <div className="relative">
-              <label for="message" className="text-sm leading-7">
-                Message
-              </label>
+              <label className="text-sm leading-7">Message</label>
               <textarea
                 id="message"
                 name="message"

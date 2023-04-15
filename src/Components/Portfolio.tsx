@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import carPricePredictor from "../Assets/images/Car price predictor.png";
 import carPricePredictor2 from "../Assets/images/Car price predictor 2.png";
@@ -6,9 +7,9 @@ import foodFinder from "../Assets/images/Food finder.png";
 import foodFinder2 from "../Assets/images/Food finder 2.png";
 import sortingVisualiser from "../Assets/images/Sorting visualiser.png";
 import sortingVisualiser2 from "../Assets/images/Sorting visualiser 2.png";
-import carPricePredictorDemo from "../Assets/vids/Car Price Predictor.mov";
-import foodFinderDemo from "../Assets/vids/Food finder.mp4";
-import sortingVisualiserDemo from "../Assets/vids/Sorting visualiser.mp4";
+// import carPricePredictorDemo from "../Assets/vids/Car Price Predictor.mov";
+// import foodFinderDemo from "../Assets/vids/Food finder.mp4";
+// import sortingVisualiserDemo from "../Assets/vids/Sorting visualiser.mp4";
 import type { StaticImageData } from "next/image";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
