@@ -5,8 +5,11 @@ import { Icon } from "@iconify/react";
 
 function About() {
   return (
-    <div id="About" className="flex pt-36">
-      <div className="w-1/3 rounded-xl bg-white px-10 py-8 drop-shadow-md backdrop-blur-md">
+    <div
+      id="About"
+      className="flex w-full flex-col items-center pt-24 md:flex-row md:items-stretch md:pt-36"
+    >
+      <div className="rounded-xl bg-white px-10 py-8 drop-shadow-md backdrop-blur-md md:w-1/3">
         <div className="inline-block rounded-xl bg-offWhite p-4">
           <Icon
             icon="mdi:account-cog-outline"
@@ -23,7 +26,7 @@ function About() {
           GraphQL, and AWS.
         </p>
       </div>
-      <div className="ml-6 w-1/3 rounded-xl bg-white px-10 py-8 drop-shadow-md backdrop-blur-md">
+      <div className="mt-8 rounded-xl bg-white px-10 py-8 drop-shadow-md backdrop-blur-md md:ml-6 md:mt-0 md:w-1/3">
         <div className="inline-block rounded-xl bg-offWhite p-4">
           <Icon
             icon="fluent-mdl2:education"
@@ -41,7 +44,7 @@ function About() {
           Cybersecurity, and Software Engineering.
         </p>
       </div>
-      <div className="ml-6 w-1/3 rounded-xl bg-white px-10 py-8 drop-shadow-md backdrop-blur-md">
+      <div className="mt-8 rounded-xl bg-white px-10 py-8 drop-shadow-md backdrop-blur-md md:ml-6 md:mt-0 md:w-1/3">
         <div className="inline-block rounded-xl bg-offWhite p-4">
           <Icon
             icon="fluent-mdl2:coffee-script"

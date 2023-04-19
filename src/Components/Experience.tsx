@@ -11,14 +11,71 @@ import riotGames from "../Assets/Companies/riot-games.png";
 
 function Experience() {
   return (
-    <div id="Experience" className="pt-36">
+    <div id="Experience" className="pt-24 md:pt-36">
       <div>
         <h2 className="text-5xl">Companies I've worked with</h2>
         <h4 className="mt-6 text-2xl text-grey">
           These are a few of the companies I’ve had the pleasuring working with.{" "}
         </h4>
       </div>
-      <div className="mt-12  flex flex-col">
+      <div className="flex-col md:hidden">
+        <div className="mt-4 flex h-20 w-full items-center justify-around">
+          <div className="flex h-full  w-7/12 justify-center">
+            <Image
+              className="h-full w-full object-contain grayscale"
+              src={wsj}
+              alt="Logo 1"
+            />
+          </div>
+          <div className="flex h-full  w-4/12 justify-center">
+            <Image
+              className="h-full w-full object-contain grayscale"
+              src={bizclik}
+              alt="Logo 2"
+            />
+          </div>
+        </div>
+        <div className="mt-4 flex h-20 w-full items-center justify-around">
+          <div className=" flex  h-full w-6/12 justify-center ">
+            <Image
+              className="h-full w-full object-contain grayscale"
+              src={theTelegraph}
+              alt="Logo 6"
+            />
+          </div>
+          <div className="flex h-full  w-4/12 justify-center">
+            <Image
+              className="h-full w-full object-contain grayscale"
+              src={riotGames}
+              alt="Logo 7"
+            />
+          </div>
+        </div>
+        <div className="mt-4 flex h-20 w-full items-center justify-around">
+          <div className="flex h-full  w-2/12 justify-center">
+            <Image
+              className="h-full w-full object-contain grayscale"
+              src={leicesterTigers}
+              alt="Logo 3"
+            />
+          </div>
+          <div className="flex h-full  w-2/12 justify-center">
+            <Image
+              className="h-full w-full object-contain grayscale"
+              src={clock}
+              alt="Logo 4"
+            />
+          </div>
+          <div className="flex h-full  w-2/12 justify-center">
+            <Image
+              className="h-full w-full object-contain grayscale"
+              src={gloucesterRugby}
+              alt="Logo 5"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="mt-12 hidden flex-col md:flex">
         <div className="flex h-48 w-full items-center justify-between">
           <div className="flex h-full  w-6/12 justify-center">
             <Image

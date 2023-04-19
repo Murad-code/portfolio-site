@@ -9,14 +9,16 @@ import Head from "next/head";
 export default function Home() {
   return (
     <div className="mb-24">
-      <div>
-        <Head>
-          <title>Murad Kamali</title>
-          <link rel="icon" href="/m.svg" />
-        </Head>
-      </div>
+      <Head>
+        <title>Murad Kamali</title>
+        <link rel="icon" href="/m.svg" />
+      </Head>
+
       <NavBar />
-      <div id="Home" className="Container px-40 pt-40 text-black">
+      <div
+        id="Home"
+        className="flex flex-col px-4 pt-32 text-black md:px-40 md:pt-40"
+      >
         <Hero />
         <About />
         <Portfolio />

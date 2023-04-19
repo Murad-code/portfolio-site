@@ -59,16 +59,18 @@ function Portfolio() {
         {projectsInfo.map((project: IProject, index: number) => (
           <div
             key={index}
-            className="mt-10 flex w-auto rounded-xl bg-white pl-16 pt-16 drop-shadow-md backdrop-blur-md"
+            className="mt-8 flex w-auto flex-col rounded-xl bg-white drop-shadow-md backdrop-blur-md md:mt-10 md:flex-row md:pl-16 md:pt-16"
           >
-            <div className="w-1/3 pb-8">
+            <div className="px-4 pb-8 md:w-1/3 md:px-0">
               <h4 className="mt-6 text-2xl">{project.name}</h4>
-              <p className="mt-3 text-xl font-light text-primary">
+              <p className="mt-1 text-lg font-light text-primary md:mt-3 md:text-xl">
                 {project.skills}
               </p>
-              <p className="mt-3 text-xl	font-light">{project.description}</p>
+              <p className="mt-1 text-lg font-light md:mt-3	md:text-xl">
+                {project.description}
+              </p>
             </div>
-            <div className="ml-4 flex h-[30rem] w-2/3 overflow-hidden rounded-br-xl rounded-tl-xl pb-3 pr-3 ">
+            <div className="ml-4 flex h-[20rem] overflow-hidden rounded-br-xl rounded-tl-xl pb-3 pr-3 md:h-[30rem] md:w-2/3 ">
               <Swiper
                 key={index}
                 navigation={true}
@@ -107,7 +109,7 @@ function Portfolio() {
   };
 
   return (
-    <div id="Portfolio" className="pt-36">
+    <div id="Portfolio" className="pt-24  md:pt-36">
       <div>
         <h2 className="text-5xl">Portfolio</h2>
         <h4 className="mt-6 text-2xl text-grey">

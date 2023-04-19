@@ -4,14 +4,14 @@ import { Icon } from "@iconify/react";
 function Hero() {
   return (
     <div className="flex flex-col ">
-      <div className="me-auto mt-20 text-center">
-        <h1 className="text-center text-6xl text-black">
+      <div className="text-center md:me-auto">
+        <h1 className="text-center text-4xl text-black md:text-6xl">
           Hi, my name is <span className="text-primary">Murad</span> <br /> I'm
           a software engineer.
         </h1>
       </div>
-      <div className="ms-auto mt-12 text-center">
-        <h3 className="text-center text-4xl text-black">
+      <div className="mt-12 text-center md:ms-auto">
+        <h3 className="text-center text-2xl text-black md:text-4xl">
           I spend my day-today developing projects with <br />{" "}
           <span className="text-[#3178C6]">TypeScript</span>,{" "}
           <span className="text-[#3E98B6]">React</span>,{" "}
@@ -19,8 +19,8 @@ function Hero() {
           <span className="text-[#EC912D]">AWS</span>
         </h3>
       </div>
-      <div className="mx-auto mt-24 text-center">
-        <h5 className="text-center text-3xl text-black">
+      <div className="mx-auto mt-10 text-center">
+        <h5 className="text-center text-xl text-black md:text-3xl">
           Scroll down to know more about me
           <div className="mt-12 flex flex-col items-center justify-center">
             <svg
@@ -37,14 +37,6 @@ function Hero() {
           </div>
         </h5>
       </div>
-
-      {/* <Icon
-        className="mx-auto mt-12"
-        icon="material-symbols:keyboard-double-arrow-down"
-        color="#339989"
-        width="48"
-        height="48"
-      /> */}
     </div>
   );
 }

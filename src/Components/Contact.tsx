@@ -14,7 +14,7 @@ function Contact() {
     window.location.href = mailtoUrl;
   };
   return (
-    <div id="Contact" className="mb-10 pt-32">
+    <div id="Contact" className="mb-10 pt-24 md:pt-32">
       <div>
         <h2 className="text-5xl">Contact Me</h2>
         <h4 className="mt-6 text-2xl text-grey">
@@ -25,8 +25,8 @@ function Contact() {
 
       <div className="mx-auto mt-10 w-auto rounded-xl bg-white p-10 pt-10 drop-shadow-md backdrop-blur-md md:w-2/3 lg:w-8/12">
         <h4 className="m-4 mt-6 text-2xl">Let's get in touch</h4>
-        <div className="m-2 flex flex-wrap">
-          <div className="w-1/2 p-2">
+        <div className="m-2 flex flex-col flex-wrap md:flex-row">
+          <div className="p-2 md:w-1/2">
             <div className="relative">
               <label className="text-sm leading-7 ">Name</label>
               <input
@@ -37,7 +37,7 @@ function Contact() {
               />
             </div>
           </div>
-          <div className="w-1/2 p-2">
+          <div className="p-2 md:w-1/2">
             <div className="relative">
               <label className="text-sm leading-7">Email</label>
               <input
@@ -64,7 +64,7 @@ function Contact() {
               Send
             </button>
           </div>
-          <div className="mt-8 flex w-full justify-around border-t border-gray-200 p-2 pt-8 text-center">
+          <div className="mt-4 flex w-full flex-col justify-around border-t border-gray-200 p-2 pt-8 text-center md:mt-8 md:flex-row">
             <p className="">
               <span className="font-semibold">Email: </span>
               murad.coding@gmail.com
