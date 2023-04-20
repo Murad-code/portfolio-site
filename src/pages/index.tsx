@@ -17,7 +17,7 @@ export default function Home() {
       <NavBar />
       <div
         id="Home"
-        className="flex flex-col px-4 pt-32 text-black md:px-40 md:pt-40"
+        className="flex flex-col px-4 pt-36 text-black md:px-40 md:pt-52"
       >
         <Hero />
         <About />

@@ -19,7 +19,7 @@ function Hero() {
           <span className="text-[#EC912D]">AWS</span>
         </h3>
       </div>
-      <div className="mx-auto mt-10 text-center">
+      <div className="mx-auto mt-24 text-center">
         <h5 className="text-center text-xl text-black md:text-3xl">
           Scroll down to know more about me
           <div className="mt-12 flex flex-col items-center justify-center">
