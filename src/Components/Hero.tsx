@@ -12,7 +12,7 @@ function Hero() {
       </div>
       <div className="mt-12 text-center md:ms-auto">
         <h3 className="text-center text-2xl text-black md:text-4xl">
-          I spend my day-today developing projects with <br />{" "}
+          I spend my day-to-day developing projects with <br />{" "}
           <span className="text-[#3178C6]">TypeScript</span>,{" "}
           <span className="text-[#3E98B6]">React</span>,{" "}
           <span className="text-[#036E00]">Node.js</span>, and{" "}
