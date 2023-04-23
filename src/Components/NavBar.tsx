@@ -63,7 +63,7 @@ export default function NavBar() {
             <button
               type="button"
               className="flex items-center  rounded-lg bg-primary p-2 px-4 text-white hover:bg-primaryDark sm:p-4 sm:px-8"
-              onClick={() => window.open("Murad Kamali CV.pdf", "_blank")}
+              // onClick={() => window.open("Murad Kamali CV.pdf", "_blank")}
             >
               <span className="">View CV</span>
             </button>
