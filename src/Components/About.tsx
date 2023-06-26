@@ -37,11 +37,12 @@ function About() {
         </div>
         <h4 className="mt-6 text-2xl font-semibold">Education</h4>
         <p className="mt-3 text-xl font-light	">
-          I'm a final year BSc Computer Science student at Brunel aiming for a
-          1st Class. This course has taught me core concepts such as algorithms,
-          data structures, databases, software engineering principles, project
-          management, and software testing. Additionally, I studied AI,
-          Cybersecurity, and Software Engineering.
+          I studied a BSc Computer Science degree at Brunel University achieving
+          a 1st Class Honours with professional practice. This course has taught
+          me core concepts such as algorithms, data structures, databases,
+          software engineering principles, project management, and software
+          testing. Additionally, I studied AI, Cybersecurity, and Software
+          Engineering.
         </p>
       </div>
       <div className="mt-8 rounded-xl bg-white px-10 py-8 drop-shadow-md backdrop-blur-md md:ml-6 md:mt-0 md:w-1/3">
