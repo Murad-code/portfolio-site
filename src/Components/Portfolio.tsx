@@ -21,6 +21,7 @@ import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Link from "next/link";
 
 function Portfolio() {
   interface IProject {
@@ -28,6 +29,7 @@ function Portfolio() {
     skills: string;
     description: string;
     link: string;
+    liveLink?: string;
     content: StaticImageData[];
   }
   const projectsInfo: IProject[] = [
@@ -45,6 +47,7 @@ function Portfolio() {
       description:
         "A sudoku webapp with optional multiplayer functionality, powered by SocketIO, allowing players to host lobbies and join via unique room IDs for real-time gameplay. \nThe SocketIO server is hosted on an AWS EC2 instance, while Nginx acts as a reverse proxy for secure HTTPS connections. A point-based scoring system and leaderboard was implemented to track each players progress.",
       link: "https://github.com/Murad-code/sudoku",
+      liveLink: "https://multidoku.vercel.app/",
       content: [multidoku, multidoku2, multidoku3],
     },
     {
@@ -81,6 +84,28 @@ function Portfolio() {
               <p className="mt-1 text-lg font-light md:mt-3	md:text-xl">
                 {project.description}
               </p>
+              <div className="linkContainer flex gap-4 md:gap-8">
+                <p className="mt-2 font-light md:mt-3">
+                  <Link
+                    href={project.link}
+                    target="_blank"
+                    className="hover:bg-primary-100 md:text-md rounded border border-primary bg-white px-3 py-1  text-sm text-primary transition duration-300 hover:bg-primary hover:text-white"
+                  >
+                    View on GitHub
+                  </Link>
+                </p>
+                {project.liveLink && (
+                  <p className="mt-2 font-light md:mt-3">
+                    <Link
+                      href={project.liveLink}
+                      target="_blank"
+                      className="hover:bg-primary-100 md:text-md rounded border border-primary bg-white px-3 py-1  text-sm text-primary transition duration-300 hover:bg-primary hover:text-white"
+                    >
+                      View Website
+                    </Link>
+                  </p>
+                )}
+              </div>
             </div>
             <div className="ml-4 flex h-[20rem] overflow-hidden rounded-br-xl rounded-tl-xl pb-3 pr-3 md:h-[30rem] md:w-2/3 ">
               <Swiper
