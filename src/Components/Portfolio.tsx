@@ -7,6 +7,10 @@ import foodFinder from "../Assets/images/Food finder.png";
 import foodFinder2 from "../Assets/images/Food finder 2.png";
 import sortingVisualiser from "../Assets/images/Sorting visualiser.png";
 import sortingVisualiser2 from "../Assets/images/Sorting visualiser 2.png";
+import multidoku from "../Assets/images/multidoku.png";
+import multidoku2 from "../Assets/images/multidoku 2.png";
+import multidoku3 from "../Assets/images/multidoku 3.png";
+
 // import carPricePredictorDemo from "../Assets/vids/Car Price Predictor.mov";
 // import foodFinderDemo from "../Assets/vids/Food finder.mp4";
 // import sortingVisualiserDemo from "../Assets/vids/Sorting visualiser.mp4";
@@ -34,6 +38,14 @@ function Portfolio() {
         "I created a Car Price Predictor web app that predicts a car's current and future price using machine learning. I used Python, scikit-learn, and Excel to develop the model, and React, Nextjs, and flask_restful to create the web app. Results are displayed on a line chart using Nivo charts.",
       link: "https://github.com/Murad-code/car-price-predictor",
       content: [carPricePredictor2, carPricePredictor, carPricePredictor3],
+    },
+    {
+      name: "Multidoku",
+      skills: "TypeScript • AWS (EC2) • Nginx • SocketIO • TailwindCSS • React",
+      description:
+        "A sudoku webapp with optional multiplayer functionality, powered by SocketIO, allowing players to host lobbies and join via unique room IDs for real-time gameplay. \nThe SocketIO server is hosted on an AWS EC2 instance, while Nginx acts as a reverse proxy for secure HTTPS connections. A point-based scoring system and leaderboard was implemented to track each players progress.",
+      link: "https://github.com/Murad-code/sudoku",
+      content: [multidoku, multidoku2, multidoku3],
     },
     {
       name: "Food Finder",
@@ -80,6 +92,7 @@ function Portfolio() {
                   delay: 2500,
                   disableOnInteraction: false,
                 }}
+                speed={1000}
                 pagination={{
                   clickable: true,
                 }}
