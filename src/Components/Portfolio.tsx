@@ -45,7 +45,7 @@ function Portfolio() {
       name: "Multidoku",
       skills: "TypeScript • AWS (EC2) • Nginx • SocketIO • TailwindCSS • React",
       description:
-        "A sudoku webapp with optional multiplayer functionality, powered by SocketIO, allowing players to host lobbies and join via unique room IDs for real-time gameplay. \nThe SocketIO server is hosted on an AWS EC2 instance, while Nginx acts as a reverse proxy for secure HTTPS connections. A point-based scoring system and leaderboard was implemented to track each players progress.",
+        "A sudoku webapp utilising the backtracking algorithm to produce puzzles with the optional multiplayer functionality, powered by SocketIO, enabling players to host lobbies and join via unique room IDs for real-time gameplay. \nThe SocketIO server is hosted on an AWS EC2 instance, while Nginx acts as a reverse proxy for secure HTTPS connections. A point-based scoring system and leaderboard was implemented to track each players progress.",
       link: "https://github.com/Murad-code/sudoku",
       liveLink: "https://multidoku.vercel.app/",
       content: [multidoku, multidoku2, multidoku3],
