@@ -74,22 +74,22 @@ function Portfolio() {
         {projectsInfo.map((project: IProject, index: number) => (
           <div
             key={index}
-            className="mt-8 flex w-auto flex-col rounded-xl bg-white drop-shadow-md backdrop-blur-md md:mt-10 md:flex-row md:pl-16 md:pt-16"
+            className="mt-8 flex w-auto flex-col md:items-center rounded-xl bg-white drop-shadow-md backdrop-blur-md md:mt-10 md:flex-row md:pb-12 md:pl-16 md:pt-12"
           >
-            <div className="px-4 pb-8 md:w-1/3 md:px-0">
-              <h4 className="mt-6 text-2xl">{project.name}</h4>
-              <p className="mt-1 text-lg font-light text-primary md:mt-3 md:text-xl">
+            <div className="px-4 pb-8 md:w-1/3 md:px-0 2xl:w-1/2">
+              <h4 className="mt-6 text-2xl 2xl:text-4xl">{project.name}</h4>
+              <p className="mt-1 text-lg font-light text-primary md:mt-3 md:text-xl 2xl:text-2xl">
                 {project.skills}
               </p>
-              <p className="mt-1 text-lg font-light md:mt-3	md:text-xl">
+              <p className="mt-1 text-lg font-light md:mt-3	md:text-xl 2xl:mt-8">
                 {project.description}
               </p>
-              <div className="linkContainer flex gap-4 md:gap-8">
+              <div className="linkContainer flex gap-4 md:gap-8 2xl:mt-6">
                 <p className="mt-2 font-light md:mt-3">
                   <Link
                     href={project.link}
                     target="_blank"
-                    className="hover:bg-primary-100 md:text-md rounded border border-primary bg-white px-3 py-1  text-sm text-primary transition duration-300 hover:bg-primary hover:text-white"
+                    className="hover:bg-primary-100 md:text-md 2xl:text-lg rounded border border-primary bg-white px-3 py-1  text-sm text-primary transition duration-300 hover:bg-primary hover:text-white"
                   >
                     View on GitHub
                   </Link>
@@ -99,7 +99,7 @@ function Portfolio() {
                     <Link
                       href={project.liveLink}
                       target="_blank"
-                      className="hover:bg-primary-100 md:text-md rounded border border-primary bg-white px-3 py-1  text-sm text-primary transition duration-300 hover:bg-primary hover:text-white"
+                      className="hover:bg-primary-100 md:text-md 2xl:text-lg rounded border border-primary bg-white px-3 py-1  text-sm text-primary transition duration-300 hover:bg-primary hover:text-white"
                     >
                       View Website
                     </Link>
@@ -122,11 +122,11 @@ function Portfolio() {
                   clickable: true,
                 }}
                 injectStyles={[".swiper-button-next: black"]}
-                className="mySwiper colors-primary rounded-br-xl rounded-tl-xl bg-offWhite p-4 "
+                className="mySwiper colors-primary rounded-br-xl rounded-tl-xl bg-offWhite p-4"
               >
                 {project.content.map((image, index) => (
                   <SwiperSlide
-                    className="rounded-br-xl rounded-tl-xl p-4"
+                    className="rounded-br-xl rounded-tl-xl p-4 2xl:p-2"
                     key={index}
                   >
                     <div className="relative h-full w-full ">

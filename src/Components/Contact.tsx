@@ -50,15 +50,17 @@ function Contact() {
       </div>
 
       <div className="mx-auto mt-10 w-auto rounded-xl bg-white p-10 pt-10 drop-shadow-md backdrop-blur-md md:w-2/3 lg:w-8/12">
-        <h4 className="m-4 mt-6 text-2xl">Let's get in touch</h4>
+        <h4 className="m-4 mt-6 text-2xl 2xl:px-16 2xl:text-3xl">
+          Let's get in touch
+        </h4>
 
         <form
           onSubmit={handleSubmit}
-          className="m-2 flex flex-col flex-wrap md:flex-row"
+          className="md:text-md m-2 flex flex-col flex-wrap text-sm md:flex-row 2xl:mt-14 2xl:px-16 2xl:text-lg"
         >
           <div className="p-2 md:w-1/2">
             <div className="relative">
-              <label className="text-sm leading-7">Email</label>
+              <label className="leading-7">Email</label>
               <input
                 type="email"
                 id="email"
@@ -66,13 +68,13 @@ function Contact() {
                 required
                 value={values.email}
                 onChange={handleChange}
-                className="w-full rounded border border-gray-300 bg-offWhite px-3 py-1 text-base leading-8 text-grey outline-none transition-colors duration-200 ease-in-out focus:border-primary"
+                className="w-full rounded border border-gray-300 bg-offWhite px-3 py-1 text-base leading-8 text-grey outline-none transition-colors duration-200 ease-in-out focus:border-primary 2xl:mt-2"
               />
             </div>
           </div>
           <div className="p-2 md:w-1/2">
             <div className="relative">
-              <label className="text-sm leading-7 ">Subject</label>
+              <label className="leading-7 ">Subject</label>
               <input
                 type="text"
                 id="subject"
@@ -80,21 +82,21 @@ function Contact() {
                 required
                 value={values.subject}
                 onChange={handleChange}
-                className="w-full rounded border border-gray-300 bg-offWhite px-3 py-1 text-base leading-8 text-grey outline-none transition-colors duration-200 ease-in-out focus:border-primary"
+                className="w-full rounded border border-gray-300 bg-offWhite px-3 py-1 text-base leading-8 text-grey outline-none transition-colors duration-200 ease-in-out focus:border-primary 2xl:mt-2"
               />
             </div>
           </div>
 
-          <div className="w-full p-2">
+          <div className="w-full p-2 2xl:mt-6">
             <div className="relative">
-              <label className="text-sm leading-7">Message</label>
+              <label className="leading-7">Message</label>
               <textarea
                 id="message"
                 name="message"
                 required
                 value={values.message}
                 onChange={handleChange}
-                className="h-32 w-full resize-none rounded border border-gray-300 bg-offWhite px-3 py-1 text-base leading-6 text-grey outline-none transition-colors duration-200 ease-in-out focus:border-primary"
+                className="h-32 w-full resize-none rounded border border-gray-300 bg-offWhite px-3 py-1 text-base leading-6 text-grey outline-none transition-colors duration-200 ease-in-out focus:border-primary 2xl:mt-2"
               ></textarea>
             </div>
           </div>
@@ -102,13 +104,13 @@ function Contact() {
             <button
               type="submit"
               value="Submit"
-              className="mx-auto flex rounded border-0 bg-primary px-8 py-2 text-lg text-white hover:bg-primary focus:outline-none"
+              className="mx-auto flex rounded border-0 bg-primary px-8 py-2 text-lg text-white hover:bg-primary focus:outline-none 2xl:mt-2"
             >
               Send
             </button>
           </div>
         </form>
-        <div className="mt-4 flex w-full flex-col justify-around border-t border-gray-200 p-2 pt-8 text-center md:mt-8 md:flex-row">
+        <div className="mt-4 flex w-full flex-col justify-around border-t border-gray-200 p-2 pt-8 text-center md:mt-8 md:flex-row 2xl:mt-20 2xl:text-xl">
           <p className="">
             <span className="font-semibold">Email: </span>
             murad.coding@gmail.com
