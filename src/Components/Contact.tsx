@@ -135,7 +135,7 @@ function Contact() {
           </Link>
           <Link
             className="cursor-pointer"
-            href="https://www.linkedin.com/in/murad-k-0872001b5/"
+            href="https://www.linkedin.com/in/murad-kamali-0872001b5/"
             target="_blank"
           >
             <Icon
