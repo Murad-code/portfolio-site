@@ -3,7 +3,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 function Hero() {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col">
       <div className="text-center md:me-auto">
         <h1 className="text-center text-4xl text-black md:text-6xl">
           Hi, my name is <span className="text-primary">Murad</span> <br /> I'm
@@ -30,7 +30,7 @@ function Hero() {
               className="h-6 w-6 animate-bounce"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M10 2a.75.75 0 0 1 .75.75v10.5l2.97-2.97a.75.75 0 0 1 1.06 1.06l-4.5 4.5a.75.75 0 0 1-1.06 0l-4.5-4.5a.75.75 0 1 1 1.06-1.06L9.25 13.25V2.75A.75.75 0 0 1 10 2z"
               />
             </svg>
