@@ -25,7 +25,7 @@ export default function NavBar() {
     >
       {({ open }) => (
         <>
-          <div className="flex h-12 flex-1 items-center  justify-between px-2 sm:items-stretch sm:justify-around">
+          <div className="flex h-12 flex-1 items-center justify-start px-2 sm:items-stretch sm:justify-around">
             <div className="sm:hidden">
               {/* Mobile menu button*/}
               <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2  hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -37,9 +37,9 @@ export default function NavBar() {
                 )}
               </Disclosure.Button>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center mx-16 md:mx-0">
               <a className="cursor-pointer">
-                <h3 className="text-2xl font-bold text-black">Murad Kamali</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-black">Murad Kamali</h3>
               </a>
             </div>
             <div className="hidden space-x-8 sm:flex sm:items-center">
@@ -47,7 +47,7 @@ export default function NavBar() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="flex cursor-pointer text-black
+                  className="flex cursor-pointer text-black text-lg
                       transition-colors duration-300 hover:text-primary"
                   // className={classNames(
                   //   item.current ? "text-primary" : "hover:text-primary",
@@ -60,13 +60,13 @@ export default function NavBar() {
               ))}
             </div>
 
-            <button
+            {/* <button
               type="button"
               className="flex items-center  rounded-lg bg-primary p-2 px-4 text-white hover:bg-primaryDark sm:p-4 sm:px-8"
               onClick={() => window.open("Murad Kamali CV.pdf", "_blank")}
             >
               <span className="">View CV</span>
-            </button>
+            </button> */}
           </div>
 
           {/* Menu button for mobile */}
