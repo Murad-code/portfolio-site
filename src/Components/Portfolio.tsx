@@ -1,5 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import ecommerce1 from "../Assets/images/Ecommerce-1.png";
+import ecommerce2 from "../Assets/images/Ecommerce-2.png";
+import ecommerce3 from "../Assets/images/Ecommerce-3.png";
+import ecommerce4 from "../Assets/images/Ecommerce-4.png";
+import ecommerce5 from "../Assets/images/Ecommerce-5.png";
 import carPricePredictor from "../Assets/images/Car price predictor.png";
 import carPricePredictor2 from "../Assets/images/Car price predictor 2.png";
 import carPricePredictor3 from "../Assets/images/Car price predictor 3.png";
@@ -33,6 +38,16 @@ function Portfolio() {
     content: StaticImageData[];
   }
   const projectsInfo: IProject[] = [
+    {
+      name: "Ecommerce Store with CMS",
+      skills:
+        "TypeScript • React • NextJs  • PayloadCMS • GraphQL • AWS (EC2, S3) • SASS",
+      description:
+        "Built an end-to-end e-commerce platform using TypeScript, Next.js, and PayloadCMS with GraphQL for data querying. Hosted on an AWS EC2 instance within a Docker container managed by Nginx for reverse proxying. Leveraged MongoDB for database management and AWS S3 for media asset storage. Integrated Stripe for seamless payment processing. Features include user authentication, account management, order tracking, and a customisable admin panel for product and content management",
+      link: "https://github.com/Murad-code/e-commerce-payloadcms",
+      liveLink: "https://www.ecommerce.muradkamali.co.uk",
+      content: [ecommerce1, ecommerce2, ecommerce3, ecommerce4, ecommerce5],
+    },
     {
       name: "Car Price Predictor",
       skills: "Python • TypeScript • React • NextJs  • Excel • Nivo",
@@ -74,7 +89,7 @@ function Portfolio() {
         {projectsInfo.map((project: IProject, index: number) => (
           <div
             key={index}
-            className="mt-8 flex w-auto flex-col md:items-center rounded-xl bg-white drop-shadow-md backdrop-blur-md md:mt-10 md:flex-row md:pb-12 md:pl-16 md:pt-12"
+            className="mt-8 flex w-auto flex-col rounded-xl bg-white drop-shadow-md backdrop-blur-md md:mt-10 md:flex-row md:items-center md:pb-12 md:pl-16 md:pt-12"
           >
             <div className="px-4 pb-8 md:w-1/3 md:px-0 2xl:w-1/2">
               <h4 className="mt-6 text-2xl 2xl:text-4xl">{project.name}</h4>
@@ -89,7 +104,7 @@ function Portfolio() {
                   <Link
                     href={project.link}
                     target="_blank"
-                    className="hover:bg-primary-100 md:text-md 2xl:text-lg rounded border border-primary bg-white px-3 py-1  text-sm text-primary transition duration-300 hover:bg-primary hover:text-white"
+                    className="hover:bg-primary-100 md:text-md rounded border border-primary bg-white px-3 py-1 text-sm  text-primary transition duration-300 hover:bg-primary hover:text-white 2xl:text-lg"
                   >
                     View on GitHub
                   </Link>
@@ -99,7 +114,7 @@ function Portfolio() {
                     <Link
                       href={project.liveLink}
                       target="_blank"
-                      className="hover:bg-primary-100 md:text-md 2xl:text-lg rounded border border-primary bg-white px-3 py-1  text-sm text-primary transition duration-300 hover:bg-primary hover:text-white"
+                      className="hover:bg-primary-100 md:text-md rounded border border-primary bg-white px-3 py-1 text-sm  text-primary transition duration-300 hover:bg-primary hover:text-white 2xl:text-lg"
                     >
                       View Website
                     </Link>
