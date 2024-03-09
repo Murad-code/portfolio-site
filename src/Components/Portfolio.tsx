@@ -43,7 +43,7 @@ function Portfolio() {
       skills:
         "TypeScript • React • NextJs  • PayloadCMS • GraphQL • AWS (EC2, S3) • SASS",
       description:
-        "Built an end-to-end e-commerce platform using TypeScript, Next.js, and PayloadCMS with GraphQL for data querying. Hosted on an AWS EC2 instance within a Docker container managed by Nginx for reverse proxying. Leveraged MongoDB for database management and AWS S3 for media asset storage. Integrated Stripe for seamless payment processing. Features include user authentication, account management, order tracking, and a customisable admin panel for product and content management",
+        "Built an end-to-end e-commerce platform using TypeScript, Next.js, and PayloadCMS with GraphQL for data querying. Hosted on an AWS EC2 instance within a Docker container managed by Nginx for reverse proxying. Leveraged MongoDB for database management and AWS S3 for media asset storage. Integrated Stripe for seamless payment processing. Features include user authentication, account management, order tracking, and a customisable admin panel for product and content management.",
       link: "https://github.com/Murad-code/e-commerce-payloadcms",
       liveLink: "https://www.ecommerce.muradkamali.co.uk",
       content: [ecommerce1, ecommerce2, ecommerce3, ecommerce4, ecommerce5],
@@ -52,7 +52,7 @@ function Portfolio() {
       name: "Car Price Predictor",
       skills: "Python • TypeScript • React • NextJs  • Excel • Nivo",
       description:
-        "I created a Car Price Predictor web app that predicts a car's current and future price using machine learning. I used Python, scikit-learn, and Excel to develop the model, and React, Nextjs, and flask_restful to create the web app. Results are displayed on a line chart using Nivo charts.",
+        "Developed a car price predictor web application aimed at evaluating a car's current and future price using machine learning techniques. Python and scikit-learn were used to construct the predictive model, with data preprocessing facilitated through Excel. The web application was built using React, Next.js, and flask_restful. The results were presented using Nivo charts, illustrating the price changes over time in a line chart format.",
       link: "https://github.com/Murad-code/car-price-predictor",
       content: [carPricePredictor2, carPricePredictor, carPricePredictor3],
     },
